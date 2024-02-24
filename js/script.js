@@ -1,8 +1,9 @@
-var argButtonName, buttonRock, buttonPaper, buttonScissors, playerWins, computerWins;
+var argButtonName, buttonRock, buttonPaper, buttonScissors, buttonRestart, playerWins, computerWins;
 
 buttonRock = document.getElementById('button-rock');
 buttonPaper = document.getElementById('button-paper');
 buttonScissors = document.getElementById('button-scissors');
+buttonRestart = document.getElementById('button-restart');
 playerWins = 0;
 computerWins = 0;
 
@@ -26,9 +27,6 @@ function buttonClicked(argButtonName) {
       return 'papier';
     } else if (argMoveId == 3) {
       return 'nożyce';
-    } else {
-      printMessage('Nie znam ruchu o id ' + argMoveId + '. Zakładam, że chodziło o "kamień".');
-      return 'kamień';
     }
   }
 
@@ -64,19 +62,30 @@ function buttonClicked(argButtonName) {
 }
 
 buttonRock.addEventListener('click', function(){
+  document.getElementById('button-restart').style.display = 'inline';
   buttonClicked('kamień');
   clearResult();
   printResult('Gracz ' + playerWins + ' : ' + computerWins + ' Komputer');
 });
 
 buttonPaper.addEventListener('click', function(){
+  document.getElementById('button-restart').style.display = 'inline';
   buttonClicked('papier');
   clearResult();
   printResult('Gracz ' + playerWins + ' : ' + computerWins + ' Komputer');
 });
 
 buttonScissors.addEventListener('click', function(){
+  document.getElementById('button-restart').style.display = 'inline';
   buttonClicked('nożyce');
   clearResult();
   printResult('Gracz ' + playerWins + ' : ' + computerWins + ' Komputer');
 });
+
+buttonRestart.addEventListener('click', function(){
+  document.getElementById('button-restart').style.display = 'none';
+  clearMessages();
+  clearResult();
+  playerWins = 0;
+  computerWins = 0;
+})
