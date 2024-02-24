@@ -7,3 +7,13 @@ function printMessage(msg){
 function clearMessages(){
 	document.getElementById('messages').innerHTML = '';
 }
+
+function printResult(gameResult){
+	var div = document.createElement('div');
+	div.innerHTML = gameResult;
+	document.getElementById('result').appendChild(div);
+}
+
+function clearResult(){
+	document.getElementById('result').innerHTML = '';
+}
