@@ -1,0 +1,154 @@
+/* Variables */
+
+$color-main: #5517c7;
+$color-submain: #26006e;
+$color-rock: #fd2af0;
+$color-paper: #00dfba;
+$color-scissors: #0c7ceb;
+$font-main: "Quicksand", sans-serif;
+
+/* Global */
+
+*, *::after, *::before {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 26px;
+}
+
+body {
+    margin: 0;
+    font-family: $font-main;
+    background: $color-main;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+/* Game */
+
+.container {
+    width: 65vw;
+    background: $color-submain;
+    box-shadow: 19px 15px 35px -19px black;
+    border-radius: 25px;
+}
+
+.row {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#button-restart {
+    display: none;
+}
+
+#messages {
+    display: none;
+    font-size: 1rem;
+}
+
+#result {
+    display: none;
+    font-size: 1rem;
+    font-weight: 600;
+    margin: 30px 0;
+}
+
+#game {
+    font-size: 2rem;
+    font-weight: 700;
+    padding: 0;
+    margin: 0;
+}
+
+.col-header {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.col-header .img {
+    height: 12rem;
+    width: 10rem;
+}
+
+.col-header .img img {
+    width: 100%;
+    height: 100%;
+    scale: 60%;
+    object-fit: contain;
+}
+
+.col-content {
+    margin: 1.8rem;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: $color-main;
+    height: 10rem;
+    width: 80%;
+    border-radius: 25px;
+}
+
+/* Buttons */
+
+.custom-btn {
+    color: #fff;
+    font-family: "Quicksand", sans-serif;
+    font-weight: 700;
+    font-size: 0.7rem;
+    text-transform: uppercase;
+    width: 130px;
+    height: 40px;
+    background: transparent;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    display: inline-block;
+}
+
+.btn-1 {
+    border: none;
+    background-color: $color-rock;
+    box-shadow: 0 0 5px $color-rock;
+  }
+  
+.btn-1:hover {
+    box-shadow: 0 0 10px $color-rock, 0 0 20px $color-rock, 0 0 20px #fff inset;
+}
+
+.btn-2 {
+    border: none;
+    background-color: $color-paper;
+    box-shadow: 0 0 5px $color-paper;
+  }
+  
+.btn-2:hover {
+    box-shadow: 0 0 10px $color-paper, 0 0 20px $color-paper, 0 0 20px #fff inset;
+}
+
+.btn-3 {
+    border: none;
+    background-color: $color-scissors;
+    box-shadow: 0 0 5px $color-scissors;
+  }
+  
+.btn-3:hover {
+    box-shadow: 0 0 10px $color-scissors, 0 0 20px $color-scissors, 0 0 20px #fff inset;
+}
+
+.btn-4 {
+    border: none;
+    background-color: $color-submain;
+    box-shadow: 0 0 5px $color-submain;
+  }
+  
+.btn-4:hover {
+    box-shadow: 0 0 10px $color-submain, 0 0 20px $color-submain, 0 0 20px #fff inset;
+}

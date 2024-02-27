@@ -63,6 +63,9 @@ function buttonClicked(argButtonName) {
 
 buttonRock.addEventListener('click', function(){
   document.getElementById('button-restart').style.display = 'inline';
+  document.getElementById('messages').style.display = 'inline';
+  document.getElementById('result').style.display = 'inline';
+  document.getElementById('game').style.display = 'none';
   buttonClicked('kamień');
   clearResult();
   printResult('Gracz ' + playerWins + ' : ' + computerWins + ' Komputer');
@@ -70,6 +73,9 @@ buttonRock.addEventListener('click', function(){
 
 buttonPaper.addEventListener('click', function(){
   document.getElementById('button-restart').style.display = 'inline';
+  document.getElementById('messages').style.display = 'inline';
+  document.getElementById('result').style.display = 'inline';
+  document.getElementById('game').style.display = 'none';
   buttonClicked('papier');
   clearResult();
   printResult('Gracz ' + playerWins + ' : ' + computerWins + ' Komputer');
@@ -77,6 +83,9 @@ buttonPaper.addEventListener('click', function(){
 
 buttonScissors.addEventListener('click', function(){
   document.getElementById('button-restart').style.display = 'inline';
+  document.getElementById('messages').style.display = 'inline';
+  document.getElementById('result').style.display = 'inline';
+  document.getElementById('game').style.display = 'none';
   buttonClicked('nożyce');
   clearResult();
   printResult('Gracz ' + playerWins + ' : ' + computerWins + ' Komputer');
@@ -84,6 +93,9 @@ buttonScissors.addEventListener('click', function(){
 
 buttonRestart.addEventListener('click', function(){
   document.getElementById('button-restart').style.display = 'none';
+  document.getElementById('messages').style.display = 'none';
+  document.getElementById('result').style.display = 'none';
+  document.getElementById('game').style.display = 'block';
   clearMessages();
   clearResult();
   playerWins = 0;

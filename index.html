@@ -3,18 +3,49 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Kamień, papier, nożyce</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 	<div class="container">
-		<div id="buttons">
-			<button type="button" id="button-rock">Kamień</button>
-			<button type="button" id="button-paper">Papier</button>
-			<button type="button" id="button-scissors">Nożyce</button>
-			<button type="button" id="button-restart" style="display: none;">Restart</button>
+		<div class="row">
+			<div class="col-header">
+				<div class="img">
+					<img src="images/rock.png" alt="">
+				</div>
+				<div id="buttons">
+					<button type="button" id="button-rock" class="custom-btn btn-1">Kamień</button>
+				</div>
+			</div>
+			<div class="col-header">
+				<div class="img">
+					<img src="images/paper.png" alt="">
+				</div>
+				<div id="buttons">
+					<button type="button" id="button-paper" class="custom-btn btn-2">Papier</button>
+				</div>
+			</div>
+			<div class="col-header">
+				<div class="img">
+					<img src="images/scissors.png" alt="">
+				</div>
+				<div id="buttons">
+					<button type="button" id="button-scissors" class="custom-btn btn-3">Nożyce</button>
+				</div>
+			</div>
 		</div>
-		<div id="messages"></div>
-		<div id="result"></div>
+		<div class="row">
+			<div class="col-content">
+				<h1 id="game">Zagrajmy w grę!</h1>
+				<div id="messages"></div>
+				<div id="result"></div>
+				<div id="buttons">
+					<button type="button" id="button-restart" class="custom-btn btn-4">Restart</button>
+				</div>
+			</div>
+		</div>
 	</div>
 	<script src="js/functions.js"></script>
 	<script src="js/script.js"></script>
