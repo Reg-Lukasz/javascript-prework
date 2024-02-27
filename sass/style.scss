@@ -152,3 +152,65 @@ body {
 .btn-4:hover {
     box-shadow: 0 0 10px $color-submain, 0 0 20px $color-submain, 0 0 20px #fff inset;
 }
+
+/* Media */
+
+@media (max-width: 1200px) {
+
+    html {
+        font-size: 22px;
+    }
+}
+
+@media (max-width: 992px) {
+
+    html {
+        font-size: 17px;
+    }
+}
+
+@media (max-width: 768px) {
+
+    html {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 654px) {
+
+    html {
+        font-size: 14px;
+    }
+
+    .custom-btn {
+        width: 100px;
+    }
+
+    .col-header {
+
+        .img {
+            height: 9rem;
+            width: 9rem;
+        }
+    }
+}
+
+
+@media (max-width: 576px) {
+
+    html {
+        font-size: 14px;
+    }
+
+    .custom-btn {
+        width: 80px;
+    }
+
+    .col-header {
+
+        .img {
+            height: 7rem;
+            width: 7rem;
+        }
+    }
+}
